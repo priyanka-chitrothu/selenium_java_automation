@@ -1,2 +1,3 @@
-# selenium_java_automation
-selenium_java_automation
+The following is sample app to automate using selenium-java url:https://tutorialsninja.com/demo
+
+
