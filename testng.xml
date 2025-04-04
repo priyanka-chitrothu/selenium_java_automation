@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+    <test name="Regression1">
+        <classes>
+            <class name="uat.Register"/>
+            <class name="uat.TC_RF_003"/>
+            <class name="uat.TC_RF_004"/>
+            <class name="uat.TC_RF_005"/>
+            <class name="uat.TC_RF_006"/>
+            <class name="uat.TC_RF_007"/>
+            <class name="uat.TC_RF_008"/>
+            <class name="uat.TC_RF_009"/>
+            <class name="uat.TC_RF_010"/>
+            <class name="uat.TC_RF_011"/>
+            <class name="uat.TC_RF_012"/>
+            <class name="uat.TC_RF_013"/>
+            <class name="uat.TC_RF_014"/>
+            <class name="uat.TC_RF_015"/>
+            <class name="uat.TC_RF_016"/>
+            <class name="uat.TC_RF_017"/>
+            <class name="uat.TC_RF_019"/>
+            <class name="uat.TC_RF_020"/>
+            <class name="uat.TC_RF_021"/>
+            <class name="uat.TC_RF_022"/>
+            <class name="uat.TC_RF_023"/>
+            <class name="uat.TC_RF_024"/>
+            <class name="uat.TC_RF_025"/>
+
+        </classes>
+    </test>
+</suite>
