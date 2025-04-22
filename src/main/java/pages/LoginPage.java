@@ -21,12 +21,33 @@ public class LoginPage {
     @FindBy(xpath = "//ul[@class= 'breadcrumb']//a[text() = 'Login']")
     private WebElement navigateToLoginPage;
 
+    @FindBy(id = "input-email")
+    private WebElement emailText;
+
+    @FindBy(id = "input-password")
+    private WebElement passwordText;
+
+    @FindBy(xpath = "//input[@class = 'btn btn-primary']")
+    private WebElement loginButton;
+
+    public void enterEmailText(String email){
+        emailText.sendKeys(email);
+    }
+
     public void clickOnContinueButton(){
         continueButton.click();
     }
 
     public void clickOnRegisterOption(){
         registerOption.click();
+    }
+
+    public void enterPasswordText(String password){
+        passwordText.sendKeys(password);
+    }
+
+    public void clickOnLoginButton(){
+        loginButton.click();
     }
 
 }
