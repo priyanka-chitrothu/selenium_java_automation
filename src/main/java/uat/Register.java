@@ -1,9 +1,7 @@
 package uat;
 
 import base.Base;
-import org.apache.hc.core5.reactor.Command;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -181,14 +179,14 @@ public void verifyRegisterAccountMandatoryFields()  {
         Assert.assertTrue(registerPage.didWeNavigateToRegisterAccountPage());
         registerPage.clickOnMyAccount();
         registerPage.selectLoginOption();
-        loginPage = registerPage.selectLoginOption();
-        loginPage.clickOnContinueButton();
+       // loginPage = registerPage.selectLoginOption();
+        //loginPage.clickOnContinueButton();
         Assert.assertTrue(registerPage.didWeNavigateToRegisterAccountPage());
 
         registerPage.clickOnMyAccount();
         registerPage.selectLoginOption();
-        loginPage = registerPage.selectLoginOption();
-        loginPage.clickOnRegisterOption();
+       // loginPage = registerPage.selectLoginOption();
+        //loginPage.clickOnRegisterOption();
         Assert.assertTrue(registerPage.didWeNavigateToRegisterAccountPage());
 
     }

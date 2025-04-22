@@ -27,6 +27,8 @@ public class Base {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         driver.get(prop.getProperty("appURL"));
+        //driver.get(prop.getProperty("appURL1"));
+       // driver.get(prop.getProperty("appURL2"));
         //driver.get("http://localhost/opencart/");
         return  driver;
 

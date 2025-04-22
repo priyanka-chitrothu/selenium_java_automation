@@ -18,6 +18,9 @@ public class LandingPage {
     @FindBy(linkText = "Register")
     private  WebElement registerOption;
 
+    @FindBy(linkText = "Login")
+    private WebElement loginOption;
+
     public void clickOnMyAccount(){
         myAccountDropMenu.click();
     }
@@ -25,5 +28,10 @@ public class LandingPage {
     public RegisterPage selectRegisterOption(){
         registerOption.click();
         return new RegisterPage(driver);
+    }
+
+    public LoginPage selectLoginOption(){
+        loginOption.click();
+        return new LoginPage(driver);
     }
 }

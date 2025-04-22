@@ -94,6 +94,7 @@ public class RegisterPage {
   @FindBy(xpath = "//div[@id= 'content']/h1")
   private WebElement registerPageHeading;
 
+
     public void enterFirstName(String firstNameText){
       firstnameField.sendKeys(firstNameText);
     }
@@ -264,7 +265,7 @@ public class RegisterPage {
         contactUsButton.click();
     }
     public boolean getRegisterPageHeading(){
-         registerPageHeading.isDisplayed();
+         return registerPageHeading.isDisplayed();
     }
 
 
